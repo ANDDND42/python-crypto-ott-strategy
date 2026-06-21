@@ -1,0 +1,1 @@
+# TraderBot, a backtesting and visualization tool for the VIDYA + OTT trading strategy.
