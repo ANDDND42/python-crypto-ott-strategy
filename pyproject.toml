@@ -1,1 +1,22 @@
-[build-system]\nrequires = [\"setuptools>=61.0\"]\nbuild-backend = \"setuptools.build_meta\"\n
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "traderbot"
+version = "0.1.0"
+description = "Backtesting and visualization tool for a VIDYA + OTT crossover trading strategy."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "ccxt",
+    "pandas",
+    "numpy",
+    "matplotlib",
+    "pandas_ta",
+    "pyarrow",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["traderbot*"]
